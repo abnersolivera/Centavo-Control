@@ -1,4 +1,4 @@
-﻿using System;
+﻿using CentavoControl.Domain.Enums;
 
 namespace CentavoControl.Domain.Entities
 {
@@ -7,7 +7,7 @@ namespace CentavoControl.Domain.Entities
         public decimal Valor { get; private set; }
         public DateTime Data { get; private set; }
         public string Descricao { get; private set; }
-        public Enums.TipoTransacao Tipo { get; private set; }
+        public TipoTransacao Tipo { get; private set; }
 
         public Transacao(decimal valor, DateTime data, string descricao, Enums.TipoTransacao tipo)
         {

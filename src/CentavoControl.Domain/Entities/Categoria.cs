@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace CentavoControl.Domain.Entities
+﻿namespace CentavoControl.Domain.Entities
 {
     public class Categoria : Entity
     {
