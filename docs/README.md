@@ -17,6 +17,13 @@ Indice central da documentacao tecnica do projeto.
 - `context/checklist-validacao-infrastructure.md`: checklist de validacao
 - `decisions/ADR-0002-infrastructure-efcore-repositories-di.md`: decisao arquitetural da camada
 
+## Testes
+
+- `tests/domain-test-execution-guide.md`: como executar os testes de Domain
+- `tests/domain-test-suite-map.md`: mapa entidade -> arquivo de teste
+- `tests/domain-test-conventions.md`: padrao para criar novos testes
+- `tests/domain-test-quality-checklist.md`: checklist de qualidade da suite
+
 ## Leitura recomendada
 
 1. `context/project-context.md`
