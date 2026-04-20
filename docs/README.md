@@ -23,6 +23,9 @@ Indice central da documentacao tecnica do projeto.
 - `tests/domain-test-suite-map.md`: mapa entidade -> arquivo de teste
 - `tests/domain-test-conventions.md`: padrao para criar novos testes
 - `tests/domain-test-quality-checklist.md`: checklist de qualidade da suite
+- `tests/infrastructure-test-execution-guide.md`: como executar testes de Infrastructure
+- `tests/infrastructure-test-suite-map.md`: mapa de fixtures e repositorios testados
+- `tests/infrastructure-test-conventions.md`: padrao para testes de integacao
 
 ## Leitura recomendada
 
