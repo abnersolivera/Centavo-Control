@@ -10,6 +10,14 @@
         public ICollection<Transferencia> TransferenciasOrigem { get; private set; }
         public ICollection<Transferencia> TransferenciasDestino { get; private set; }
 
+            private Conta()
+            {
+                Nome = string.Empty;
+                Transacoes = new List<Transacao>();
+                TransferenciasOrigem = new List<Transferencia>();
+                TransferenciasDestino = new List<Transferencia>();
+            }
+
         public Conta(string nome, Guid usuarioId, decimal saldo = 0, decimal limiteChequeEspecial = 0)
         {
             Nome = nome;

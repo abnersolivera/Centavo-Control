@@ -10,6 +10,15 @@ namespace CentavoControl.Domain.Entities
         public ICollection<Conta> Contas { get; private set; }
         public ICollection<CartaoCredito> Cartoes { get; private set; }
 
+            private Usuario()
+            {
+                Nome = string.Empty;
+                Email = string.Empty;
+                SenhaHash = string.Empty;
+                Contas = new List<Conta>();
+                Cartoes = new List<CartaoCredito>();
+            }
+
         public Usuario(string nome, string email, string senhaHash)
         {
             Nome = nome;

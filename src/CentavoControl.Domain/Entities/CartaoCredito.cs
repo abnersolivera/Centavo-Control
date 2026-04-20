@@ -10,6 +10,12 @@
         public Guid UsuarioId { get; private set; }
         public Usuario Usuario { get; private set; }
 
+            private CartaoCredito()
+            {
+                Nome = string.Empty;
+                Usuario = null!;
+            }
+
         public CartaoCredito(string nome, decimal limite, DateTime diaFechamento, DateTime diaVencimento, Usuario usuario)
         {
             Nome = nome;

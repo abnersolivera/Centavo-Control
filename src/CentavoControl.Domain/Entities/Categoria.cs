@@ -8,6 +8,12 @@ namespace CentavoControl.Domain.Entities
         public string? Descricao { get; private set; }
         public ICollection<Transacao> Transacoes { get; private set; }
 
+            private Categoria()
+            {
+                Nome = string.Empty;
+                Transacoes = new List<Transacao>();
+            }
+
         public Categoria(string nome, string? descricao = null)
         {
             if (string.IsNullOrWhiteSpace(nome))

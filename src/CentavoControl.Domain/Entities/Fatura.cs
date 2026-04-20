@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace CentavoControl.Domain.Entities
+﻿namespace CentavoControl.Domain.Entities
 {
     public class Fatura : Entity
     {
@@ -11,6 +9,12 @@ namespace CentavoControl.Domain.Entities
         public decimal ValorTotal { get; private set; }
         public bool Paga { get; private set; }
         public ICollection<Transacao> Transacoes { get; private set; }
+
+            private Fatura()
+            {
+                CartaoCredito = null!;
+                Transacoes = new List<Transacao>();
+            }
 
         public Fatura(CartaoCredito cartaoCredito, DateTime dataFechamento, DateTime dataVencimento, decimal valorTotal)
         {

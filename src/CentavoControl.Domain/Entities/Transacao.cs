@@ -19,6 +19,11 @@ namespace CentavoControl.Domain.Entities
         public CartaoCredito? CartaoCredito { get; private set; }
         public Categoria? Categoria { get; private set; }
 
+            private Transacao()
+            {
+                Descricao = string.Empty;
+            }
+
         public Transacao(
             decimal valor,
             DateTime data,

@@ -10,6 +10,10 @@
         public Conta? ContaOrigem { get; private set; }
         public Conta? ContaDestino { get; private set; }
 
+            private Transferencia()
+            {
+            }
+
         public Transferencia(Guid usuarioId, Guid contaOrigemId, Guid contaDestinoId, decimal valor, DateTime data)
         {
             UsuarioId = usuarioId;
