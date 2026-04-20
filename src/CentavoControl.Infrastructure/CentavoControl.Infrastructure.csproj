@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\CentavoControl.Domain\CentavoControl.Domain.csproj" />
+    <ProjectReference Include="..\CentavoControl.Application\CentavoControl.Application.csproj" />
+  </ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>CentavoControl.Infrastructure</RootNamespace>
+  </PropertyGroup>
+</Project>
